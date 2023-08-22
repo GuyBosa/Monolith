@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+<app-hero-banner></app-hero-banner>
+<app-snapdocs></app-snapdocs>
+<app-monolith-story-slider></app-monolith-story-slider>
+
+<form id="cal-form">
+  <!-- autofocus -->
+  <h1>CALCULATOR</h1>
+  <div class="row pb-2">
+    <div class="col-md-4">
+      <div class="form-group"><input placeholder="Type value one" type="number" name="val1" id="val1" [(ngModel)]="val1"></div>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="form-group"><input [value]="currentSign" type="text" name="sign" id="sign" disabled></div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group"><input placeholder="Type value two" type="number" name="val2" id="val2" [(ngModel)]="val2"></div>
+    </div>
+  </div>
+
+  <div class="row wrapper">
+    <div class="col-md-2 symbols">
+      <input class="btn" type="button" value="+" (click)="currentSign='+'; add()">
+    </div>
+    <div class="col-md-2 symbols">
+      <input class="btn" type="button" value="-" (click)="currentSign='-'; minus()">
+    </div>
+    <div class="col-md-2 symbols">
+      <input class="btn" type="button" value="x" (click)="currentSign='x'; multiply()">
+    </div>
+    <div class="col-md-2 symbols">
+      <input class="btn" type="button" value="/" (click)="currentSign='/'; divide()">
+    </div>
+  </div>
+  
+  <div class="row offset-md-4 pt-3">
+    <div class="col-md-12">
+      <input class="placeholder" type="number" name="ans" id="ans" [(ngModel)]="ans" readonly placeholder="Result">
+    </div>
+  </div>
+</form>
+<div class="d-flex justify-content-center">
+  <button type="button" (click)="reset()" class="mbtn red">
+    <strong>RESET</strong>
+  </button>
+</div>
+<app-footer></app-footer>
+
+

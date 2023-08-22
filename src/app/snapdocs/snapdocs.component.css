@@ -1,0 +1,55 @@
+.card {
+    width: fit-content;
+    height: auto;
+    background-color: #fff;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+      .hide-in-mobile{
+        display: none;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px){
+    .hide-in-mobile{
+      display: none;
+  }
+  }
+  .fit{
+    width: fit-content;
+  }
+  .auto{
+    margin: auto;
+  }
+  ::ng-deep .accordion-flush .accordion-collapse{
+    background: linear-gradient(#f8f8f8, #fff);
+  }
+
+  ::ng-deep .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+    background: transparent;
+  }
+
+  ::ng-deep .accordion-flush .accordion-item{
+    background: transparent;
+  }
+  ::ng-deep .accordion-button:not(.collapsed){
+    color: #f26b2c;
+  }
+  .fa-arrow-circle-right{
+    color: #f26b2c;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .link{
+    font-size: 12px;
+  }
+  .bold{
+    font-weight: bolder;
+  }
+  .full-width{
+    width: 100%;
+  }

@@ -1,0 +1,378 @@
+.bold{
+    font-weight: bolder;
+  }
+  .black-background{
+    background-color: #000;
+    color: #fff;
+  }
+  .text-center{
+    text-align: center;
+  }
+
+/* .hori-timeline .events {
+    border-top: 3px solid #e9ecef;
+}
+.hori-timeline .events .event-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+}
+.hori-timeline .events .event-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+}
+.hori-timeline .events .event-list .event-date {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+@media (min-width: 1140px) {
+    .hori-timeline .events .event-list {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+    }
+    .hori-timeline .events .event-list .event-date {
+        top: -12px;
+    }
+}
+.bg-soft-primary {
+    background-color: rgba(64,144,203,.3)!important;
+}
+.bg-soft-success {
+    background-color: rgba(71,189,154,.3)!important;
+}
+.bg-soft-danger {
+    background-color: rgba(231,76,94,.3)!important;
+}
+.bg-soft-warning {
+    background-color: rgba(249,213,112,.3)!important;
+}
+.card {
+    border: none;
+    margin-bottom: 24px;
+}
+.text-muted{
+    color: #fff !important;
+} */
+
+
+
+
+/* :::TIMELINE STYLES:::: */
+html, body {
+    height: 100%;
+}
+input {
+    position: absolute;
+    left: -9999px;
+}
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background: #060447;
+    color: #fff38a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.starwars {
+    position: relative;
+    user-select: none;
+    width: 1000px;
+    height: 720px;
+    max-width: 100%;
+}
+.starwars .content {
+    display: flex;
+}
+.starwars .content .left {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 65%;
+}
+.starwars .content .right {
+    flex: 1 1 35%;
+}
+.starwars .timeline {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 13rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.starwars .timeline-line {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    width: 100%;
+    height: 2px;
+    background: #827b68;
+}
+.starwars .timeline-line:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #fff38a;
+    transition: 1000ms ease all;
+}
+.starwars .timeline-dot {
+    position: relative;
+    z-index: 1;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 2px solid #827b68;
+    background: #fff38a;
+    transition: 1000ms ease all;
+}
+.starwars .films-info {
+    position: relative;
+}
+.starwars .film-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transform: translate(50px);
+    opacity: 0;
+    transition: 1000ms ease all;
+}
+.starwars .film-info .title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.starwars .film-info .description {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 27rem;
+}
+.starwars .films-image {
+    position: relative;
+    overflow: hidden;
+    width: 23rem;
+    height: 33rem;
+}
+.starwars .films-image-wrapper {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    transition: 1000ms ease all;
+}
+.starwars .film-image {
+    position: relative;
+    height: 100%;
+    flex: 1 1 33.33%;
+    width: 33.33%;
+    background-size: 130%;
+}
+.starwars .film-image:nth-child(1) {
+    background-size: 130%;
+    background-position: 60% 25%;
+}
+.starwars .film-image:nth-child(2) {
+    background-size: 170%;
+    background-position: 50% 18%;
+}
+.starwars .film-image:nth-child(3) {
+    background-size: 150%;
+    background-position: 40% 15%;
+}
+.starwars .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1.4rem;
+    height: 2.18rem;
+}
+.starwars .arrow.right {
+    left: 3.4rem;
+}
+.starwars .arrow label {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.starwars .films-date {
+    position: absolute;
+    bottom: 6rem;
+    left: 0;
+}
+.starwars .film-date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 240px;
+    transition: 1000ms ease all;
+}
+.starwars .film-date.d {
+    left: 14rem;
+}
+.starwars .film-date.a {
+    left: 23rem;
+}
+.starwars .film-date:not(.fixed) {
+    transform: translate(50px);
+    opacity: 0;
+}
+.starwars #input-1:checked ~ .content .film-info:nth-child(1) {
+    opacity: 1;
+    transform: translate(0);
+}
+.starwars #input-1:checked ~ .content .film-date.d-1, .starwars #input-1:checked ~ .content .film-date.a-1 {
+    opacity: 1;
+    transform: translate(0);
+}
+.starwars #input-1:checked ~ .content .films-image-wrapper {
+    transform: translate(0%);
+}
+.starwars #input-1:checked ~ .content .timeline-dot:nth-child(1) ~ .timeline-dot {
+    background: #827b68;
+}
+.starwars #input-1:checked ~ .content .timeline-line:before {
+    width: 0%;
+}
+.starwars #input-1:checked ~ .arrow.right label:nth-child(1) + label {
+    opacity: 1;
+    pointer-events: all;
+}
+.starwars #input-1:checked ~ .arrow.left label:nth-child(0) {
+    opacity: 1;
+    pointer-events: all;
+}
+.starwars #input-1:checked:nth-child(3) ~ .arrow.right label:last-child {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.starwars #input-1:checked:nth-child(1) ~ .arrow.left label:first-child {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.starwars #input-1:not(:checked) ~ .left:hover ~ .content .film-info:nth-child(1) {
+    right: 150px;
+}
+.starwars #input-1:not(:checked) ~ .left:hover ~ .content .film-date[class*="-1"] {
+    right: 150px;
+}
+.starwars #input-2:checked ~ .content .film-info:nth-child(2) {
+    opacity: 1;
+    transform: translate(0);
+}
+.starwars #input-2:checked ~ .content .film-date.d-2, .starwars #input-2:checked ~ .content .film-date.a-2 {
+    opacity: 1;
+    transform: translate(0);
+}
+.starwars #input-2:checked ~ .content .films-image-wrapper {
+    transform: translate(-33.33%);
+}
+.starwars #input-2:checked ~ .content .timeline-dot:nth-child(2) ~ .timeline-dot {
+    background: #827b68;
+}
+.starwars #input-2:checked ~ .content .timeline-line:before {
+    width: 25%;
+}
+.starwars #input-2:checked ~ .arrow.right label:nth-child(2) + label {
+    opacity: 1;
+    pointer-events: all;
+}
+.starwars #input-2:checked ~ .arrow.left label:nth-child(1) {
+    opacity: 1;
+    pointer-events: all;
+}
+.starwars #input-2:checked:nth-child(3) ~ .arrow.right label:last-child {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.starwars #input-2:checked:nth-child(1) ~ .arrow.left label:first-child {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.starwars #input-2:not(:checked) ~ .left:hover ~ .content .film-info:nth-child(2) {
+    right: 150px;
+}
+.starwars #input-2:not(:checked) ~ .left:hover ~ .content .film-date[class*="-2"] {
+    right: 150px;
+}
+.starwars #input-3:checked ~ .content .film-info:nth-child(3) {
+    opacity: 1;
+    transform: translate(0);
+}
+.starwars #input-3:checked ~ .content .film-date.d-3, .starwars #input-3:checked ~ .content .film-date.a-3 {
+    opacity: 1;
+    transform: translate(0);
+}
+.starwars #input-3:checked ~ .content .films-image-wrapper {
+    transform: translate(-66.66%);
+}
+.starwars #input-3:checked ~ .content .timeline-dot:nth-child(3) ~ .timeline-dot {
+    background: #827b68;
+}
+.starwars #input-3:checked ~ .content .timeline-line:before {
+    width: 50%;
+}
+.starwars #input-3:checked ~ .arrow.right label:nth-child(3) + label {
+    opacity: 1;
+    pointer-events: all;
+}
+.starwars #input-3:checked ~ .arrow.left label:nth-child(2) {
+    opacity: 1;
+    pointer-events: all;
+}
+.starwars #input-3:checked:nth-child(3) ~ .arrow.right label:last-child {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.starwars #input-3:checked:nth-child(1) ~ .arrow.left label:first-child {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.starwars #input-3:not(:checked) ~ .left:hover ~ .content .film-info:nth-child(3) {
+    right: 150px;
+}
+.starwars #input-3:not(:checked) ~ .left:hover ~ .content .film-date[class*="-3"] {
+    right: 150px;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .starwars #input-1:checked ~ .content .film-date.d-1, .starwars #input-1:checked ~ .content .film-date.a-1{
+        opacity: 0;
+    }
+    .starwars .film-date{
+        opacity: 0;
+    }
+    .starwars #input-2:checked ~ .content .film-date.d-2, .starwars #input-2:checked ~ .content .film-date.a-2{
+        opacity: 0;
+    }
+    .starwars #input-3:checked ~ .content .film-date.d-3, .starwars #input-3:checked ~ .content .film-date.a-3{
+        opacity: 0;
+    }
+    .starwars .film-info .title{
+        margin: 0;
+        width: 320px;
+    }
+    .starwars .film-info .description{
+        opacity: 0;
+    }
+    .starwars .film-image:nth-child(3){
+        opacity: 0;
+    }
+}

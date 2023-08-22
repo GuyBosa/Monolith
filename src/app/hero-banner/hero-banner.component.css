@@ -1,0 +1,57 @@
+ .banner-background{
+    background: linear-gradient(0deg, rgb(0 0 0 / 83%), rgb(2 26 82 / 25%)), url(https://www.monolithai.com/hubfs/Group_39403_min.png);
+    background-size: cover;
+ }
+ .banner-padding{
+    padding-top: 6rem !important;
+ }
+ ::ng-deep .ng-image-slider .ng-image-slider-container .main .main-inner{
+    /* width: 1760px !important; */
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ ::ng-deep .ng-image-slider .ng-image-slider-container .main .prev{
+    visibility: hidden;
+ }
+
+ ::ng-deep .ng-image-slider .ng-image-slider-container .main .next, .ng-image-slider .ng-image-slider-container .main .prev{
+    visibility: hidden;
+ }
+
+ button.mbtn {
+    padding:0.6em 2em;
+    border-radius: 8px;
+    color:#fff;
+    font-size:1.1em;
+    border:0;
+    cursor:pointer;
+    margin:1em;
+    border: 2px solid #FF5A60;
+    border-radius: 25px;
+  }
+
+  button.mbtn.red{
+    color: rgba(255,255,255,1.0);
+    background-color: rgba(255,90,96,1.0);
+  }
+  button.mbtn.red:hover {
+   background: rgba(204,77,89,1.0) !important;
+   border-color: #cc4d59 !important;
+  }
+
+  button.mbtn.outline{
+    color: rgba(255,255,255,1.0);
+    background-color: transparent;
+  }
+  button.mbtn.outline:hover{
+   background: rgba(255,90,95,1.0);
+   border-color: #ff5a5f;
+   color: #000;
+ }
+  .red{
+    color: rgba(255,90,96,1.0);
+  }
+  .white{
+    color: rgba(255,255,255,1.0);
+  }

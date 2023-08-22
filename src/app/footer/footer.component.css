@@ -1,0 +1,135 @@
+.footer {
+    background-color: black;
+    color: #fefefe;
+    bottom: 0;
+    left: 0;
+  }
+  .no-text-decoration{
+    text-decoration: none;
+  }
+  .white{
+    color: white;
+  }
+  .second-footer-logo{
+    justify-content: end;
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+      .social-media-links{
+        display: block;
+        padding: 0 !important;
+    }
+    .privacy-policy{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  .footer .heading {
+    color: #fefefe;
+    /* max-width: 1205px; */
+    width: 100%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+  }
+  
+  .footer .content p {
+    margin-bottom: 1.3rem;
+  }
+  
+  .footer .content a {
+    text-decoration: none;
+    color: #fefefe;
+  }
+  
+  .footer .content a:hover {
+    border-bottom: 1px solid #971717;
+  }
+  
+  .footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  footer hr {
+    margin: 2rem 0;
+  }
+  @media (min-width: 768px) and (max-width: 1023px){
+    .social-media-links{
+        padding: 0 !important;
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1440px){
+    .social-media-links{
+        padding: 0 !important;
+    }
+  }
+  @media (max-width: 767px) {
+    .footer .content {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+    }
+    .social-media-links{
+        padding: 0;
+    }
+    .footer {
+      position: unset;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .footer .content,
+    .footer {
+      font-size: 14px;
+    }
+  }
+  
+  @media (orientation: landscape) and (max-height: 500px) {
+    .footer {
+      position: unset;
+    }
+    .social-media-links{
+        padding: 0;
+    }
+  }
+  button.mbtn {
+    width: 210px;
+    padding:0.6em 2em;
+    border-radius: 8px;
+    color:#fff;
+    font-size:1.1em;
+    border:0;
+    cursor:pointer;
+    margin:1em;
+    border: 2px solid #FF5A60;
+    border-radius: 25px;
+  }
+
+  button.mbtn.red{
+    color: rgba(255,255,255,1.0);
+    background-color: rgba(255,90,96,1.0);
+  }
+  .social-media-links{
+    justify-content: space-evenly;
+    padding: 0 240px 0 240px;
+    align-items: center;
+  }
+  ::ng-deep a:hover{
+    color: #FF5A60 !important;
+    border-bottom: 0 !important;
+  }
+
+  button.mbtn.red:hover{
+    background: none !important;
+  }
