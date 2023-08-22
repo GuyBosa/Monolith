@@ -1,9 +1,9 @@
-# MONOLITH Landing Page
+![screencapture-localhost-4200-2023-08-22-22_40_04](https://github.com/GuyBosa/Monolith/assets/40579537/77cd586e-7aaa-4eb3-872b-558082f362b1)# MONOLITH Landing Page
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6,
 bootstrap 5, ng-image-slider, font-awesome 4, firebase 9
+![screencapture-localhost-4200-2023-08-22-22_40_04](https://github.com/GuyBosa/Monolith/assets/40579537/24481cc4-2d58-4c81-a4b4-c655fefb52ab)
 
-![Alt text](screencapture-localhost-4200-2023-08-22-22_40_04.png)
 
 ## Git
 Make sure you have [Git] installed on your PC. See https://git-scm.com/downloads for help. 
