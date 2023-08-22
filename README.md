@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6,
 bootstrap 5, ng-image-slider, font-awesome 4, firebase 9
-![screencapture-localhost-4200-2023-08-22-22_40_04](https://github.com/GuyBosa/Monolith/assets/40579537/24481cc4-2d58-4c81-a4b4-c655fefb52ab)
+![screencapture-localhost-4200-2023-08-22-22_40_04](https://github.com/GuyBosa/Monolith/assets/40579537/9ae60f6f-f801-403e-9113-775c20678446)
 
 
 ## Git
